@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://bytes.usc.edu/cs585/s21_DBDS012/hw/HW3/OL/OL.html -->
+<html>
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>Spiro</title>
+
+<body>
+        <canvas id="myCanvas" width="1200" height="1200" style="border:1px solid #000000;">
+                Your browser does not support the HTML canvas tag.
+        </canvas>
+
+        <script>
+                var canvas = document.getElementById('myCanvas');
+                if (canvas.getContext) {
+                        const ctx = canvas.getContext('2d');
+                        ctx.beginPath();
+
+                        const R = 8/1000;
+                        const r = 1/1000;
+                        const a = 4/1000;
+
+                        const x0 = R + r - a;
+                        const y0 = 0;
+                        const nRev = 16;
+                        ctx.moveTo(150 + 10 * x0, 150 + 10 * y0);
+                         
+                        const sgmX = 34.021170;
+                        const sgmY = -118.288981;
+                        let kmlText = "";
+
+                        for (let t = 0.0; t < (Math.PI * nRev); t += 0.1) {
+
+                                let x = (R + r) * Math.cos((r / R) * t) - a * Math.cos((1 + r / R) * t);
+                                let y = (R + r) * Math.sin((r / R) * t) - a * Math.sin((1 + r / R) * t);
+                                ctx.lineTo(150 + 10 * x, 150 + 10 * y);
+
+                                let lat = x + sgmX;
+                                let long = y + sgmY;
+                                kmlText += long + "," + lat + "\n";
+                        }
+                        ctx.lineTo(150 + 10 * x0, 150 + 10 * y0);
+                        ctx.stroke();
+                        let lat = x0 + sgmX;
+                        let long = y0 + sgmY;
+                        kmlText += long + "," + lat + "\n";
+                        console.log(kmlText);
+                }
+        </script>
+
+
+
+</body>
+
+</html>

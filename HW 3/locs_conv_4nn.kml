@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+    <Document>
+        <Style id="z1">
+            <IconStyle>
+                <Icon>
+                    <href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="z2">
+            <IconStyle>
+                <Icon>
+                    <href>http://www.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="z3">
+            <IconStyle>
+                <Icon>
+                    <href>http://www.google.com/intl/en_us/mapfiles/ms/micons/green-dot.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Placemark>
+            <name>Prentis Memorial Fountain</name>
+            <styleUrl>#z1</styleUrl>
+            <Point>
+                <coordinates>-118.284559,34.020540</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Patsy and Forrest Shumway Fountain</name>
+            <styleUrl>#z1</styleUrl>
+            <Point>
+                <coordinates>-118.285208,34.020162</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Leavey Library Fountain</name>
+            <styleUrl>#z1</styleUrl>
+            <Point>
+                <coordinates>-118.28298632,34.02137420</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Expo Park Fountain</name>
+            <styleUrl>#z1</styleUrl>
+            <Point>
+                <coordinates>-118.28611980,34.017802665</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Dornsife Fountain</name>
+            <styleUrl>#z1</styleUrl>
+            <Point>
+                <coordinates>-118.28679899,34.01905132</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Epstein Plaza Fountain</name>
+            <styleUrl>#z1</styleUrl>
+            <Point>
+                <coordinates>-118.28863008726,34.0202887825</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Hoose Library</name>
+            <styleUrl>#z2</styleUrl>
+            <Point>
+                <coordinates>-118.286721,34.018719</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Accounting Library</name>
+            <styleUrl>#z2</styleUrl>
+            <Point>
+                <coordinates>-118.285586,34.019190</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Doheny Library</name>
+            <styleUrl>#z2</styleUrl>
+            <Point>
+                <coordinates>-118.283730,34.020188</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Helen Topping Architecture Library</name>
+            <styleUrl>#z2</styleUrl>
+            <Point>
+                <coordinates>-118.288043,34.019202</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Science and Engineering Library</name>
+            <styleUrl>#z2</styleUrl>
+            <Point>
+                <coordinates>-118.288730,34.019577</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Leavey Library</name>
+            <styleUrl>#z2</styleUrl>
+            <Point>
+                <coordinates>-118.282957,34.021782</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Home</name>
+            <styleUrl>#z3</styleUrl>
+            <Point>
+               <coordinates>-118.2798934,34.0283626</coordinates>
+            </Point>
+        </Placemark>
+        
+        <Placemark>
+            <Polygon>
+                <outerBoundaryIs>
+                    <LinearRing>
+                        <coordinates>
+                        -118.2861198,34.017802665
+                        -118.28873,34.019577
+                        -118.28863008726,34.0202887825
+                        -118.2798934,34.0283626
+                        -118.28298632,34.0213742
+                        -118.28373,34.020188
+                        -118.2861198,34.017802665
+                        </coordinates>
+                    </LinearRing>
+                </outerBoundaryIs>
+            </Polygon>
+            <Style>
+                <PolyStyle>
+                    <color>ffff00cc</color>
+                </PolyStyle>
+            </Style>
+        </Placemark>
+        <Style id="s2">
+            <LineStyle>
+                <color>#ff0000ff</color>
+                <width>4</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>7f00ff00</color>
+            </PolyStyle>
+        </Style>
+        <Placemark>
+            <styleUrl>#s2</styleUrl>
+            <LineString>
+                <coordinates> 
+            -118.2798934,34.0283626 
+            -118.282957,34.021782
+                </coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark>
+            <styleUrl>#s2</styleUrl>
+            <LineString>
+                <coordinates> 
+            -118.2798934,34.0283626
+            -118.28298632,34.0213742
+                </coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark>
+            <styleUrl>#s2</styleUrl>
+            <LineString>
+                <coordinates> 
+            -118.2798934,34.0283626
+            -118.28373,34.020188
+                </coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark>
+            <styleUrl>#s2</styleUrl>
+            <LineString>
+                <coordinates> 
+            -118.2798934,34.0283626
+            -118.284559,34.02054
+                </coordinates>
+            </LineString>
+        </Placemark>
+
+
+    </Document>
+</kml>
